@@ -1,0 +1,28 @@
+<div *ngIf="formapago">
+  <table>
+    <thead>
+      <tr>
+        <th>IDFORMAPAGO</th>
+        <th>NombreFP</th>
+        <th>codigoSri</th>
+        <th>Estado</th>
+        <th>codigoSae</th>
+        <th>Descripcion</th>
+        <th>Fecha</th>
+        <th>Id usuario</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let pago of formapago">
+        <td>{{ pago.idFormaPago}}</td>
+        <td>{{ pago.nombreFp }}</td>
+        <td>{{ pago.codigoSri }}</td>
+        <td>{{ pago.activo }}</td>
+        <td>{{ pago.codigoSae }}</td>
+        <td>{{ pago.descripcionFp }}</td>
+        <td>{{ pago.fechaFp }}</td>
+        <td>{{ pago.idUsuarioFp }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

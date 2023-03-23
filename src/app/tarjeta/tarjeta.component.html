@@ -1,0 +1,24 @@
+<div *ngIf="tarjetas">
+    <table>
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Nombre</th>
+          <th>Descripción</th>
+          <th>Estado</th>
+          <th>Fecha</th>
+          <th>ID Usuario</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let tarjeta of tarjetas">
+          <td>{{ tarjeta.dateTarjeta }}</td>
+          <td>{{ tarjeta.nombreTarjeta }}</td>
+          <td>{{ tarjeta.descTarjeta }}</td>
+          <td>{{ tarjeta.stateTarjeta }}</td>
+          <td>{{ tarjeta.dateTarjeta }}</td>
+          <td>{{ tarjeta.idUsurTarjeta }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
