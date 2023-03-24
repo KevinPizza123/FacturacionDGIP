@@ -46,14 +46,20 @@ import { TarjetaComponent } from './tarjeta/tarjeta.component';
 import { HeaderComponent } from './layout/header/header.component';
 import { FormsModule } from '@angular/forms';
 import { FormapagoComponent } from './formapago/formapago.component';
+import { TipoconceptoComponent } from './tipoconcepto/tipoconcepto.component';
+import { TipoconsumidorComponent } from './tipoconsumidor/tipoconsumidor.component';
+import { BancosComponent } from './bancos/bancos.component';
 
 
 @NgModule({
-  declarations: [	
+  declarations: [				
     AppComponent,
     TarjetaComponent,
     HeaderComponent,
-      FormapagoComponent
+      FormapagoComponent,
+      TipoconceptoComponent,
+      TipoconsumidorComponent,
+      BancosComponent
    ],
   imports: [
     MenuModule,
